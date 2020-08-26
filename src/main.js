@@ -14,6 +14,15 @@ import './assets/css/iconfont.css'
 import FastClick from 'fastclick'
 FastClick.attach(document.body)
 
+
+
+
+import VueAwesomeSwiper from 'vue-awesome-swiper'
+import { Swiper, SwiperSlide, directive } from 'vue-awesome-swiper'
+// import 'swiper/css/swiper.css'
+import 'swiper/swiper-bundle.css'
+Vue.use(VueAwesomeSwiper)
+
 new Vue({
   router,
   store,
