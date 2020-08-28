@@ -15,26 +15,9 @@ import { Swiper, SwiperSlide, directive } from "vue-awesome-swiper";
 import "swiper/swiper-bundle.css";
 export default {
   name: "carrousel",
-
+  props:["swiperList"],
   data() {
     return {
-      swiperList: [
-        {
-          id: "01",
-          imgUrl:
-            "http://imgs.qunarzz.com/vs_ceph_vcimg/c0a60fa20379efa4f02ce527a680dc1b.jpeg",
-        },
-        {
-          id: "02",
-          imgUrl:
-            "http://imgs.qunarzz.com/vc/e3/a1/71/f498dfd3bed948d623c9093252.jpg_92.jpg",
-        },
-        {
-          id: "03",
-          imgUrl:
-            "http://imgs.qunarzz.com/vs_ceph_vcimg/b8c4527c41649814cc4cf86880abba54.jpeg",
-        },
-      ],
       swiperOptions: {
         pagination: {
           el: ".swiper-pagination",

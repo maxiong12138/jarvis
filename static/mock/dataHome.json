@@ -1,0 +1,184 @@
+{
+    "data":[
+        {
+            "city":"深圳",
+            "swiperList": [
+                    {
+                    "id": "01",
+                    "imgUrl":
+                        "http://imgs.qunarzz.com/vs_ceph_vcimg/c0a60fa20379efa4f02ce527a680dc1b.jpeg"
+                    },
+                    {
+                    "id": "02",
+                    "imgUrl":
+                        "http://imgs.qunarzz.com/vc/e3/a1/71/f498dfd3bed948d623c9093252.jpg_92.jpg"
+                    },
+                    {
+                    "id": "03",
+                    "imgUrl":
+                        "http://imgs.qunarzz.com/vs_ceph_vcimg/b8c4527c41649814cc4cf86880abba54.jpeg"
+                    }
+              ],
+              "icomList": [
+                {
+                  "id": "01",
+                  "imgUrl": "https://imgs.qunarzz.com/piao/fusion/1803/95/f3dd6c383aeb3b02.png",
+                  "title": "景点门票"
+                },
+                {
+                  "id": "02",
+                  "imgUrl": "https://imgs.qunarzz.com/piao/fusion/1804/5a/13ceb38dcf262f02.png",
+                  "title": "一日游"
+                },
+                {
+                  "id": "03",
+                  "imgUrl": "https://imgs.qunarzz.com/piao/fusion/1803/bd/9f7b9b2b60c1502.png",
+                  "title": "踏青赏花"
+                },
+                {
+                  "id": "04",
+                  "imgUrl":
+                    "https://imgs.qunarzz.com/piao/fusion/1803/47/c2b659e048b11602.png",
+                  "title": "主题乐园"
+                },
+                {
+                  "id": "05",
+                  "imgUrl":
+                    "https://imgs.qunarzz.com/piao/fusion/1804/ff/fdf170ee89594b02.png",
+                  "title": "深圳必游"
+                },
+                {
+                  "id": "06",
+                  "imgUrl": "https://imgs.qunarzz.com/piao/fusion/1803/27/dac2bcf9added702.png",
+                  "title": "海滨海岛"
+                },
+                {
+                  "id": "07",
+                  "imgUrl": "https://imgs.qunarzz.com/piao/fusion/1803/ab/6f7d6e44963c9302.png",
+                  "title": "泡温泉"
+                },
+                {
+                  "id": "08",
+                  "imgUrl": "https://imgs.qunarzz.com/piao/fusion/1803/b6/37560ece9c62b502.png",
+                  "title": "城市观光"
+                },
+                {
+                  "id": "09",
+                  "imgUrl":"https://imgs.qunarzz.com/piao/fusion/1803/b6/37560ece9c62b502.png",
+                  "title": "高空观景"
+                },
+                {
+                  "id": "10",
+                  "imgUrl":"https://mp-piao-admincp.qunarzz.com/mp_piao_admin_mp_piao_admin/admin/20193/a40ee278d67000f2a29d2e20f6a029b3.png",
+                  "title": "自然风光"
+                }
+              ],
+              "hotList":[
+                {
+                  "id":"01",
+                  "imgUrl":"http://img1.qunarzz.com/sight/p0/1604/e0/e074ca39741daad890.water.jpg_250x250_b8020e8f.jpg",
+                  "title":"深圳欢乐谷",
+                  "mark":"113.5"
+                },
+                {
+                  "id":"02",
+                  "imgUrl":"http://img1.qunarzz.com/sight/p0/1508/2e/d9363ce50a88c8c5ff5a138c67687cd4.water.jpg_250x250_b592c33d.jpg",
+                  "title":"深圳野生动物园",
+                  "mark":"49.6"
+                },{
+                  "id":"03",
+                  "imgUrl":"http://img1.qunarzz.com/sight/p0/1902/f2/f2e0213052717f7ca3.water.jpg_250x250_540fc25d.jpg",
+                  "title":"世界之窗",
+                  "mark":"98"
+                },{
+                  "id":"04",
+                  "imgUrl":"http://img1.qunarzz.com/sight/p0/1508/de/cdaac63f6f60646439b27b641d3326d4.water.jpg_250x250_dc5857bb.jpg",
+                  "title":"东部华侨城大侠谷",
+                  "mark":"149.5"
+                },{
+                  "id":"05",
+                  "imgUrl":"http://img1.qunarzz.com/sight/p0/201403/04/abf9d2133fbfc65ac5d7d15eebebd374.jpg_250x250_202b2227.jpg",
+                  "title":"锦绣中华民俗村",
+                  "mark":"94"
+                },{
+                  "id":"06",
+                  "imgUrl":"http://img1.qunarzz.com/sight/p0/1805/ab/ab4fccbc392da994a3.water.jpg_250x250_2dd2a345.jpg",
+                  "title":"观澜山水田园水上乐园",
+                  "mark":"85.5"
+                },{
+                  "id":"07",
+                  "imgUrl":"http://img1.qunarzz.com/sight/p0/1412/6f/5d803c45af314b68f4652362fca42d11.water.jpg_250x250_952b7c21.jpg",
+                  "title":"青青世界",
+                  "mark":"72.5"
+                },{
+                  "id":"08",
+                  "imgUrl":"http://img1.qunarzz.com/sight/p0/1802/39/39ec37884650dd97a3.img.png_250x250_ad9e90c3.png",
+                  "title":"深圳平安金融中心",
+                  "mark":"165"
+                },{
+                  "id":"09",
+                  "imgUrl":"http://img1.qunarzz.com/sight/p0/201307/18/f25ac054eec3804dc8d65eac.jpg_250x250_b9ebca61.jpg",
+                  "title":"海洋奇梦馆",
+                  "mark":"60"
+                },{
+                  "id":"10",
+                  "imgUrl":"http://img1.qunarzz.com/sight/p0/1810/df/df65113c1322333fa3.water.jpg_250x250_cde69668.jpg",
+                  "title":"地王大厦",
+                  "mark":"51.5"
+                }
+              ],
+              "likeList":[
+                {
+                    "id":"01",
+                    "imgUrl":"http://img1.qunarzz.com/sight/p0/1604/e0/e074ca39741daad890.water.jpg_200x200_c9bd614e.jpg",
+                    "title":"深圳欢乐谷",
+                    "msg":"39846",
+                    "price":"115",
+                    "map":"南山区"
+
+                },
+                {
+                    "id":"02",
+                    "imgUrl":"http://img1.qunarzz.com/sight/p0/1510/d0/d0610302e0ae770890.water.jpg_200x200_2ce068f1.jpg",
+                    "title":"东部华侨城茵特拉根温泉",
+                    "msg":"2666",
+                    "price":"79.8",
+                    "map":"盐田区"
+
+                },
+                {
+                    "id":"03",
+                    "imgUrl":"http://img1.qunarzz.com/sight/p0/1802/39/39ec37884650dd97a3.img.png_200x200_580f99ac.png",
+                    "title":"深圳平安金融中心",
+                    "msg":"2470",
+                    "price":"165",
+                    "map":"福田区"
+
+                }
+            ],
+              "vactionList":[
+                {
+                    "id":"01",
+                    "imgUrl":"http://img1.qunarzz.com/sight/source/1507/d9/2ddc7652fdba16.jpg_r_640x214_5e62f1a3.jpg",
+                    "title":"深圳周边游",
+                    "msg":"远离城市拥堵，去周边开启清新假期吧。"
+                },
+                {
+                    "id":"02",
+                    "imgUrl":"http://img1.qunarzz.com/sight/source/1811/15/66f14e0fd6fbb.jpg_r_640x214_5d69f21d.jpg",
+                    "title":"清远周边逛",
+                    "msg":"人人都有一双发现美的眼睛，身边的事物最熟悉不过，那你可曾发现了被人遗漏的美？"
+                },
+                {
+                    "id":"03",
+                    "imgUrl":"http://img1.qunarzz.com/sight/source/1811/b8/5d599bbdcf8b57.jpg_r_640x214_2ee055e3.jpg",
+                    "title":"浮在海上的绿洲",
+                    "msg":"南国滨海之城，避寒胜地，有暖暖的阳光，海风习习，吃着海鲜逛逛老街多惬意啊"
+                }
+            ]
+        },
+        {
+            "city":"北京"
+        }
+    ]
+}

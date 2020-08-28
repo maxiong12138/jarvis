@@ -11,7 +11,7 @@
                     </div>
                     <div class="like-text">
                         <div class="like-title">{{item.title}}</div>
-                        <div class="like-msg">{{item.msg}}</div>
+                        <div class="like-msg">{{item.msg}}条评论</div>
                         <div class="like-map">
                             <span class="like-title-map">¥<b>{{item.price}}</b></span>起
                             <span class="like-mark">{{item.map}}</span>
@@ -25,37 +25,10 @@
 
 <script>
 export default {
+    props:["likeList"],
     data(){
         return{
-            likeList:[
-                {
-                    id:"01",
-                    imgUrl:"http://img1.qunarzz.com/sight/p0/1604/e0/e074ca39741daad890.water.jpg_200x200_c9bd614e.jpg",
-                    title:"深圳欢乐谷",
-                    msg:"39846条评论",
-                    price:"115",
-                    map:"南山区"
-
-                },
-                {
-                    id:"02",
-                    imgUrl:"http://img1.qunarzz.com/sight/p0/1510/d0/d0610302e0ae770890.water.jpg_200x200_2ce068f1.jpg",
-                    title:"东部华侨城茵特拉根温泉",
-                    msg:"2666条评论",
-                    price:"79.8",
-                    map:"盐田区"
-
-                },
-                {
-                    id:"03",
-                    imgUrl:"http://img1.qunarzz.com/sight/p0/1802/39/39ec37884650dd97a3.img.png_200x200_580f99ac.png",
-                    title:"深圳平安金融中心",
-                    msg:"2470条评论",
-                    price:"165",
-                    map:"福田区"
-
-                },
-            ]
+            
         }
     }
 }

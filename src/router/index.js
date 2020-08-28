@@ -1,6 +1,7 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 import Home from '../components/home/Home'
+import City from '../components/city/City'
 
 Vue.use(VueRouter)
 
@@ -8,6 +9,11 @@ const routes = [{
     path: '/',
     name: 'Home',
     component: Home
+  },
+  {
+    path: '/city',
+    name: 'City',
+    component: City
   },
   // {
   // path: '/about',
@@ -20,7 +26,7 @@ const routes = [{
 ]
 
 const router = new VueRouter({
-  // mode: "history",
+  mode: "history",
   routes
 })
 

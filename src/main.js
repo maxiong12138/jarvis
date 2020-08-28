@@ -15,13 +15,16 @@ import FastClick from 'fastclick'
 FastClick.attach(document.body)
 
 
-
-
+//引入swiper
 import VueAwesomeSwiper from 'vue-awesome-swiper'
-import { Swiper, SwiperSlide, directive } from 'vue-awesome-swiper'
 // import 'swiper/css/swiper.css'
 import 'swiper/swiper-bundle.css'
+// import { Swiper, SwiperSlide, directive } from 'vue-awesome-swiper'
 Vue.use(VueAwesomeSwiper)
+
+//引入axios
+import axios from "axios"
+Vue.prototype.axios=axios
 
 new Vue({
   router,

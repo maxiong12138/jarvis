@@ -17,34 +17,17 @@
 
 <script>
 export default {
+    props:["vactionList"],
     data(){
         return{
-            vactionList:[
-                {
-                    id:"01",
-                    imgUrl:"http://img1.qunarzz.com/sight/source/1507/d9/2ddc7652fdba16.jpg_r_640x214_5e62f1a3.jpg",
-                    title:"深圳周边游",
-                    msg:"远离城市拥堵，去周边开启清新假期吧。"
-                },
-                {
-                    id:"02",
-                    imgUrl:"http://img1.qunarzz.com/sight/source/1811/15/66f14e0fd6fbb.jpg_r_640x214_5d69f21d.jpg",
-                    title:"清远周边逛",
-                    msg:"人人都有一双发现美的眼睛，身边的事物最熟悉不过，那你可曾发现了被人遗漏的美？"
-                },
-                {
-                    id:"03",
-                    imgUrl:"http://img1.qunarzz.com/sight/source/1811/b8/5d599bbdcf8b57.jpg_r_640x214_2ee055e3.jpg",
-                    title:"浮在海上的绿洲",
-                    msg:"南国滨海之城，避寒胜地，有暖暖的阳光，海风习习，吃着海鲜逛逛老街多惬意啊"
-                },
-            ]
+            
         }
     }
 }
 </script>
 
-<style scoped>
+<style scoped lang="stylus">
+@import '../../../assets/css/common.styl'
 .vaction-title{
     padding: 0.2rem;
     font-size: 0.32rem;
@@ -75,9 +58,7 @@ export default {
 .vaction-msg p+p{
     color: #616161;
     font-size: .24rem;
-   white-space: nowrap;
-  text-overflow: ellipsis;
-  overflow: hidden;
+    textOverflow()
 }
 </style>
 
