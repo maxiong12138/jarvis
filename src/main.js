@@ -2,7 +2,10 @@ import Vue from 'vue'
 import App from './App.vue'
 import router from './router'
 import store from './store'
-
+// 引入数据 ------------------------------------------------------------------ 修改>
+const dataHome = require('../static/mock/dataHome.json');
+const city=require('../static/mock/city.json')
+// console.log(appData)
 
 Vue.config.productionTip = false
 
@@ -25,6 +28,11 @@ Vue.use(VueAwesomeSwiper)
 //引入axios
 import axios from "axios"
 Vue.prototype.axios=axios
+
+//全局挂载数据 ------------------------------------------------------------------ 修改>
+Vue.prototype.dataHome=dataHome
+Vue.prototype.city=city
+
 
 new Vue({
   router,

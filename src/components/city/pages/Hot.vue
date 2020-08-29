@@ -2,19 +2,14 @@
     <div class="hot">
         <div class="hot-title">热门城市</div>
         <ul class="hot-list">
-            <li class="hot-item">深圳</li>
-            <li class="hot-item">深圳</li>
-            <li class="hot-item">深圳</li>
-            <li class="hot-item">深圳</li>
-            <li class="hot-item">深圳</li>
-            <li class="hot-item">深圳</li>
+            <li v-for='item in hotCities' :key="item.id" class="hot-item">{{item.name}}</li>
         </ul>
     </div>
 </template>
 
 <script>
 export default {
-    
+    props:['hotCities']
 }
 </script>
 

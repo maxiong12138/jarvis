@@ -7,11 +7,12 @@
     <home-activity></home-activity>
     <home-hot :hotList="hotList"></home-hot>
     <home-like :likeList="likeList"></home-like>
-    <home-vaction :vactionList="vactionList"></home-vaction>
+    <home-vaction :vacationList="vacationList"></home-vaction>
   </div>
 </template>
 
 <script>
+import { mapState } from "vuex";
 import HomeHeader from "./pages/header";
 import HomeSwiper from "./pages/swiper";
 import HomeIcom from "./pages/icom";
@@ -20,8 +21,6 @@ import HomeActivity from "./pages/activity";
 import HomeHot from "./pages/hot";
 import HomeLike from "./pages/like";
 import HomeVaction from "./pages/vaction";
-
-
 
 export default {
   name: "Home",
@@ -35,31 +34,38 @@ export default {
     HomeLike,
     HomeVaction,
   },
-  data(){
-    return{
-      swiperList:[],
-      icomList:[],
-      hotList:[],
-      likeList:[],
-      vactionList:[],
-    }
+  data() {
+    return {
+      swiperList: [],
+      icomList: [],
+      hotList: [],
+      likeList: [],
+      vacationList: [],
+    };
+  },
+  methods: {
+    // ------------------------------------------------------------------------------ 修改>
+    async init() {
+      //把局部dataHome赋值为全局的数据里的内容
+      let dataHome = await this.dataHome;
+      console.log(dataHome);
+      for (var i = 0; i < dataHome.data.length; i++) {
+        this.swiperList = dataHome.data[i].swiperList;
+        this.icomList = dataHome.data[i].icomList;
+        this.hotList = dataHome.data[i].hotList;
+        this.likeList = dataHome.data[i].likeList;
+        this.vacationList = dataHome.data[i].vacationList;
+      }
+    },
   },
   mounted() {
-    this.axios.get("http://localhost:8080/static/mock/dataHome.json").then(result=>{
-      // console.log(result.data.data)
-      const data=result.data.data[0];
-      this.swiperList=data.swiperList;
-      this.icomList=data.icomList;
-      this.hotList=data.hotList;
-      this.likeList=data.likeList;
-      this.vactionList=data.vactionList;
-    })
+    this.init();
   },
 };
 </script>
 
 <style>
-.home{
+.home {
   background-color: #eee;
 }
 </style>

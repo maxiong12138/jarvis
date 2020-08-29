@@ -2,7 +2,7 @@
     <div class="vaction">
         <div class="vaction-title">周末去哪儿</div> 
         <ul>
-            <li class="vaction-item" v-for="(item,key) in vactionList" :key="key">
+            <li class="vaction-item" v-for="(item,key) in vacationList" :key="key">
                 <div class="vaction-img">
                     <img :src="item.imgUrl">
                 </div>
@@ -17,7 +17,7 @@
 
 <script>
 export default {
-    props:["vactionList"],
+    props:["vacationList"],
     data(){
         return{
             

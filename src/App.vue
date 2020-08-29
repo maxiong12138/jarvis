@@ -6,6 +6,5 @@
 <script>
 // export default {
 //   }
-  console.log(this.Data)
 </script>
 
