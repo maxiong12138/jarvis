@@ -48,15 +48,24 @@ export default {
     async init() {
       //把局部dataHome赋值为全局的数据里的内容
       let dataHome = await this.dataHome;
-      console.log(dataHome);
-      for (var i = 0; i < dataHome.data.length; i++) {
-        this.swiperList = dataHome.data[i].swiperList;
-        this.icomList = dataHome.data[i].icomList;
-        this.hotList = dataHome.data[i].hotList;
-        this.likeList = dataHome.data[i].likeList;
-        this.vacationList = dataHome.data[i].vacationList;
-      }
+      // console.log(dataHome);
+      dataHome.data.forEach((item,index) => {
+        if(item.city==this.city){
+          console.log(item)
+        // for (var i = 0; i < dataHome.data.length; i++) {
+        this.swiperList = item.swiperList;
+        this.icomList = item.icomList;
+        this.hotList = item.hotList;
+        this.likeList = item.likeList;
+        this.vacationList = item.vacationList;
+      // }
+        }
+      });
+      
     },
+  },
+  computed: {
+    ...mapState(["city"])
   },
   mounted() {
     this.init();

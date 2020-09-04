@@ -2,14 +2,25 @@
     <div class="sort">
         <div class="sort-title">字母排序</div>
         <ul class="sort-list">
-            <li v-for='(item,key) in cities' :key="key" class="sort-item">{{key}}</li>
+            <li v-for="(p,i) of citiesType" :key="i" @click="changes($event)"  class="sort-item">{{p}}</li>
         </ul>
     </div>
 </template>
 
 <script>
 export default {
-    props:['cities']
+    // props:['citiesType'],
+    data() {
+    return {
+      citiesType: ["A", "B", "C","D","E","F","G","H","J","K","L","M","N","P","Q","R","S","T","W","X","Y","Z"],
+    };
+  },
+  methods: {
+      changes(e){
+          var el = e.currentTarget;
+         console.log(el.innerHTML);
+      }
+  },
 }
 </script>
 

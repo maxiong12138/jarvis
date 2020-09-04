@@ -9,15 +9,19 @@
     </div>
     <div class="header-right">
       <router-link to="/city">
-      北京<span class="iconfont">&#xe644;</span>
+      {{city}}<span class="iconfont">&#xe644;</span>
       </router-link>
     </div>
   </div>
 </template>
 
 <script>
+import {mapState} from 'vuex'
 export default {
   name: "HomeHeader",
+  computed: {
+    ...mapState(['city'])
+  },
 };
 </script>
 

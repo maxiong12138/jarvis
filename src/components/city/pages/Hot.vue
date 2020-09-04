@@ -1,15 +1,32 @@
 <template>
     <div class="hot">
         <div class="hot-title">热门城市</div>
-        <ul class="hot-list">
-            <li v-for='item in hotCities' :key="item.id" class="hot-item">{{item.name}}</li>
+        <ul class="hot-list">                                                          
+            <li v-for='(item,index) of hotCities' :key="index" class="hot-item" @click="changeCity($event)">{{item}}</li>
+            <!-- {{hotCities}} -->
         </ul>
     </div>
 </template>
 
 <script>
+import {mapMutations} from 'vuex'
 export default {
-    props:['hotCities']
+    props:['hotCities'],
+    data(){
+        return{
+            
+        }
+    },
+    methods: {
+        changeCity(e){
+          var el = e.currentTarget;
+            this.$router.push("/")
+            this.changesCity(el);
+            // alert(el.innerHTML)
+        },
+        ...mapMutations(["changesCity"])
+    }
+    
 }
 </script>
 
@@ -18,6 +35,9 @@ export default {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+.hot{
+    margin-top: 0.88rem;
 }
 .hot-title{
     font-size: 0.24rem;

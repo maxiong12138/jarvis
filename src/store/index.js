@@ -3,13 +3,21 @@ import Vuex from 'vuex'
 
 Vue.use(Vuex)
 
-export default new Vuex.Store({
-  state: {
-  },
-  mutations: {
-  },
-  actions: {
-  },
-  modules: {
+let defaultCity="上海"
+
+defaultCity=localStorage.city
+
+const state = {
+  city:defaultCity
+}
+const mutations = {
+  changesCity(state,el){
+    state.city=el.innerHTML
+    localStorage.city=el.innerHTML
   }
+}
+
+export default new Vuex.Store({
+  state,
+  mutations
 })

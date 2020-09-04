@@ -19,10 +19,14 @@ export default {
 .header {
   width: 100%;
   line-height: 0.88rem;
+  height 0.88rem
   background: $bgColor;
   color: $textColor;
   font-size: 0.32rem;
-  position relative;
+  position fixed;
+  top :0;
+  left :0;
+  z-index :10
 }
 
 .header-left {

@@ -2,6 +2,7 @@ import Vue from 'vue'
 import App from './App.vue'
 import router from './router'
 import store from './store'
+
 // 引入数据 ------------------------------------------------------------------ 修改>
 const dataHome = require('../static/mock/dataHome.json');
 const city=require('../static/mock/city.json')
